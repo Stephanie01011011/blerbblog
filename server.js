@@ -2,7 +2,7 @@ import express from 'express';
 import axios from 'axios';
 import bodyParser from 'body-parser';
 
-const port = 2000;
+const port = process.env.PORT || 2000;
 const app = express();
 
 const api_url = "http://localhost:4000";
