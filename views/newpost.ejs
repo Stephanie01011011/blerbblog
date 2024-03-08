@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("partials/header.ejs") %>
+<body>
+    <h1 class="title">BLERB</h1>
+
+  
+
+        <div class="main form">
+            <form action="/api/posts" method="post">
+                <label for="" >Title </label>
+                <input type="text" name="title" id="title">
+
+                <label for="" >Author </label>
+                <input type="text" name="author" id="title"> 
+
+                <label for="" >Body </label>
+               <textarea name="content" cols="50" rows="14"></textarea>
+                <input type="submit" name="submit" class="newBtn submitBtn">
+            </form>
+        
+        </div>
+
+
+   
+  
+</body>
+
+<%- include("partials/footer.ejs") %>
+</html>
